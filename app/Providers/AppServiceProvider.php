@@ -23,6 +23,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->singleton('Loaded', function () {
+            $loaded = new Loaded();
+
+            return $loaded;
+        });
     }
 }

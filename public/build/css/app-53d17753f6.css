@@ -277,6 +277,16 @@ section.white {
   width: 100%;
   margin-top: 30px;
   padding: 30px; }
+  section.white.textTemp h1, section.white.textTemp h2 {
+    color: #187abf; }
+  section.white.textTemp h1 {
+    padding: 0; }
+  section.white.textTemp h2 {
+    padding: 20px 0 0 0; }
+
+section.textTemp .image {
+  padding: 2px;
+  border: 1px solid #187abf; }
 
 /* NIEUWS */
 .newsItem .image {

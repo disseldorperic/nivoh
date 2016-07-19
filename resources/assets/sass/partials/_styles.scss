@@ -227,6 +227,24 @@ section.white {
   width: 100%;
   margin-top: 30px;
   padding: 30px;
+  &.textTemp {
+    h1, h2 {
+      color:$blue;
+    }
+    h1 {
+      padding:0;
+    }
+    h2 {
+      padding:20px 0 0 0;
+    }
+  }
+}
+
+section.textTemp {
+  .image {
+    padding: 2px;
+    border: 1px solid $blue;
+  }
 }
 
 // HOME

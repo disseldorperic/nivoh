@@ -284,12 +284,15 @@ section.white {
   section.white.textTemp h1 {
     padding: 0; }
   section.white.textTemp h2 {
-    padding: 20px 0 0 0; }
-
-section.textTemp .image {
-  padding: 2px;
-  border: 1px solid #187abf;
-  margin-bottom: 30px; }
+    padding: 10px 0 0 0; }
+  section.white.textTemp p {
+    margin-bottom: 24px; }
+    section.white.textTemp p:last-child {
+      margin-bottom: 0; }
+  section.white.textTemp .image {
+    padding: 2px;
+    border: 1px solid #187abf;
+    margin-bottom: 30px; }
 
 /* NIEUWS */
 .newsItem .image {

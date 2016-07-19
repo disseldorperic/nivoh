@@ -235,16 +235,19 @@ section.white {
       padding:0;
     }
     h2 {
-      padding:20px 0 0 0;
+      padding:10px 0 0 0;
     }
-  }
-}
-
-section.textTemp {
-  .image {
-    padding: 2px;
-    border: 1px solid $blue;
-    margin-bottom:30px;
+    p {
+      margin-bottom:24px;
+      &:last-child {
+        margin-bottom:0;
+      }
+    }
+    .image {
+      padding: 2px;
+      border: 1px solid $blue;
+      margin-bottom:30px;
+    }
   }
 }
 

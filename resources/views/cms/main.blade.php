@@ -8,8 +8,9 @@
 
 <div class="row">
     <div class="col-md-12">
-        {!! CMS::input('blok1', ['titleblok1', 'Titel', 'text']) !!}
+        {!! CMS::group('blok1', ['title', 'Titel', 'text'], ['image', 'Afbeelding', 'image', ['width' => 750, 'height' => 250, 'cropper' => true]]) !!}
     </div>
+
     <div class="col-md-12">
         {!! CMS::tinymce('content1') !!}
     </div>
@@ -19,8 +20,9 @@
 
 <div class="row">
     <div class="col-md-12">
-        {!! CMS::input('blok2', ['titleblok2', 'Titel', 'text']) !!}
+        {!! CMS::group('blok2', ['title', 'Titel', 'text'], ['image', 'Afbeelding', 'image', ['width' => 750, 'height' => 250, 'cropper' => true]]) !!}
     </div>
+
     <div class="col-md-12">
         {!! CMS::tinymce('content2') !!}
     </div>
@@ -30,8 +32,9 @@
 
 <div class="row">
     <div class="col-md-12">
-        {!! CMS::input('blok3', ['titleblok3', 'Titel', 'text']) !!}
+        {!! CMS::group('blok3', ['title', 'Titel', 'text'], ['image', 'Afbeelding', 'image', ['width' => 750, 'height' => 250, 'cropper' => true]]) !!}
     </div>
+
     <div class="col-md-12">
         {!! CMS::tinymce('content3') !!}
     </div>

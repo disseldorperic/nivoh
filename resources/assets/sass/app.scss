@@ -1,2 +1,16 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "partials/_variables.scss";
+
+@import "partials/_header.scss";
+@import "partials/_footer.scss";
+
+@import "partials/_nav.scss";
+
+@import "partials/_styles.scss";
+
+// RESPONSIVE
+
+@import "partials/responsive/md";
+@import "partials/responsive/sm";
+@import "partials/responsive/xs";
+
 

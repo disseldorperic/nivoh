@@ -1,0 +1,372 @@
+body {
+  background: #f2f2f2 url(/images/header.jpg) no-repeat top center;
+  color: #2b2b2b;
+  font-family: $font-family-base;
+  overflow-x: hidden;
+  line-height: 26px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-family-title;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  font-size: 27px;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0 0 30px 0;
+  span {
+    color: $blue;
+  }
+}
+
+// BUTTONS
+
+a {
+  color: $blueShadow;
+}
+
+a.read {
+  color: $blueShadow;
+  font-weight: bold;
+  position: relative;
+  padding-right: 30px;
+  &:after {
+    content: "\f178";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0;
+    top: -2px;
+    font-size: 18px;
+    color: $blueShadow;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $blue;
+    &:after {
+      color: $blue;
+    }
+  }
+}
+
+.btn-default {
+  background: $blue;
+  color: white;
+  border: 0;
+  font-family: $font-family-title;
+  font-size: 20px;
+  border-bottom: 5px solid $blueShadow;
+  border-radius: 0;
+  padding: 15px;
+  text-transform: uppercase;
+  &:hover,
+  &:focus {
+    background: $blueShadow;
+    color: white;
+    border-bottom: 5px solid #012c4a;
+  }
+}
+
+.button {
+  width: 100%;
+  position: relative;
+  display: block;
+  height: 243px;
+  float:left;
+  margin-bottom:22px;
+  span.name,
+  span.ikben {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-family-title;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  span.ikben {
+    color: $blueShadow;
+    font-size: 20px;
+    padding: 10px 5px 20px 5px;
+  }
+  span.name {
+    color: #fff;
+    font-size: 24px;
+    padding: 6px 5px;
+    position:relative;
+    &:after {
+      content:"";
+      width:40px;
+      height:1px;
+      background:$blue;
+      position:absolute;
+      bottom:0;
+      left:0;
+      right:0;
+      margin:0 auto;
+    }
+    &:last-child {
+      &:after {
+        height:0;
+      }
+    }
+  }
+  .click {
+    background:$blue;
+    color:#ffffff;
+    font-family: $font-family-title;
+    font-size:20px;
+    display:block;
+    position:absolute;
+    bottom:-22px;
+    padding:10px 15px 8px 15px;
+    margin:8px auto 0 auto;
+    left:0;
+    right:0;
+    text-align:center;
+    width:140px;
+    text-transform:uppercase;
+    border-bottom:5px solid $blueShadow;
+    i {
+      margin-left:10px;
+      color:$blueShadow;
+    }
+  }
+  &:hover {
+    text-decoration: none;
+    .click {
+      background:$blueShadow;
+      border-bottom:5px solid #012c4a;
+      color:$blue;
+      i {
+        color:$blue;
+      }
+    }
+  }
+}
+
+#btnOpdrachtgever {
+  background: url(/images/btnOpdrachtgever.jpg) no-repeat 0 0;
+  width: 330px;
+  max-width: 330px;
+  max-height: 243px;
+  margin-left:30px;
+  &:hover {
+    background: url(/images/btnOpdrachtgever.jpg) no-repeat -330px 0;
+  }
+}
+#btnInstallateur {
+  background: url(/images/btnInstallateur.jpg) no-repeat 0 0;
+  width: 330px;
+  max-width: 330px;
+  max-height: 243px;
+  &:hover {
+    background: url(/images/btnInstallateur.jpg) no-repeat -330px 0;
+  }
+}
+
+// TITLE
+
+.title {
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 30px;
+  position: relative;
+  font-family: $font-family-title;
+  text-transform: uppercase;
+  .pagetitle {
+    color: $blue;
+    float: left;
+    font-size: 20px;
+    position: relative;
+    margin: 0 18px 0 0;
+    padding: 0;
+  }
+  .subtitle {
+    color: white;
+    float: left;
+    font-size: 20px;
+    position: relative;
+    padding: 0 0 0 20px;
+    margin: 0;
+    &:before {
+      content: "/";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 45px;
+    width: 0;
+    height: 0;
+    border-top: solid 20px rgba(0, 0, 0, 0.8);
+    border-left: solid 20px transparent;
+    border-right: solid 20px transparent;
+  }
+}
+
+// SECTION
+
+section.white {
+  background: #fff;
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+// HOME
+
+/* NIEUWS */
+.newsItem {
+  .image {
+    padding: 2px;
+    border: 1px solid $blue;
+  }
+  .item {
+    h3 {
+      font-size: 22px;
+      color: $blueShadow;
+    }
+  }
+}
+
+.listNews {
+  margin-top: 30px;
+  float: left;
+  width: 100%;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid #dfe0e0;
+      a {
+        padding-left: 24px;
+        color: $grayLight;
+        position: relative;
+        &:before {
+          content: "\f178";
+          font-family: FontAwesome;
+          position: absolute;
+          left: 0;
+          top: 1px;
+          font-size: 14px;
+          color: #dfe0e0;
+        }
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          color: $blue;
+          &:before {
+            color: $blue;
+          }
+        }
+      }
+      &:last-child {
+        border-bottom: 0;
+        padding: 8px 0 0 0;
+      }
+    }
+  }
+}
+
+// NEWSLETTER
+
+.newsletter {
+  margin-top: 30px;
+  width: 100%;
+  float: left;
+  h2 {
+    font-family: 'Lobster Two', cursive;
+    text-transform: inherit;
+    color: $blue;
+    margin: 0 0 15px 0;
+    padding: 0 100px 0 0;
+    font-weight: normal;
+    position: relative;
+    display: inline-block;
+    &:after {
+      content: "";
+      background-image: url(/images/arrow.png);
+      position: absolute;
+      right: 0;
+      top: 15px;
+      width: 78px;
+      height: 50px;
+    }
+  }
+  .newsletterForm {
+    padding: 20px;
+    background: #fff;
+    width: 100%;
+    float: left;
+    .btn-default {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+// FORMS
+.form-group {
+  .form-control {
+    background: $grayLighter;
+    border: 0;
+    border-radius: 0;
+    height: 50px;
+    box-shadow: none;
+    font-weight: bold;
+  }
+}
+
+.form-control::-webkit-input-placeholder {
+  color: $blue !important;
+}
+
+.form-control:focus::-webkit-input-placeholder {
+  color: #333 !important;
+}
+
+.form-control:-moz-placeholder {
+  color: $blue !important;
+  opacity: 1;
+}
+
+.form-control:focus:-moz-placeholder {
+  color: #333 !important;
+  opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+  color: $blue !important;
+  opacity: 1;
+}
+
+.form-control:focus::-moz-placeholder {
+  color: #333 !important;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: $blue !important;
+}
+
+.form-control:focus:-ms-input-placeholder {
+  color: #333 !important;
+}

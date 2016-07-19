@@ -9,6 +9,9 @@
     <meta name="description" content="{{ Content::description() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <link href='https://fonts.googleapis.com/css?family=Lobster+Two:400italic|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/6a5d9d4d-6f72-4f7d-a838-7611ccac6246.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -22,10 +25,25 @@
     <![endif]-->
 </head>
 <body>
+    @include('partials._header')
 
-    @include('partials._nav')
+    <section class="mainContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 sidebar">
+                    @include('partials._nav')
 
-    @yield('content')
+                    @include('partials._newsletter')
+                </div>
+                <div class="col-sm-8 main">
+                    @yield('content')
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @include('partials._footer')
+
 
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

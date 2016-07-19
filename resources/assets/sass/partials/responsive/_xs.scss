@@ -1,0 +1,11 @@
+@media(max-width:767px){
+  .navbar-toggle {
+    background:#ffffff;
+    border-radius:0;
+    border:0;
+    border-bottom:5px solid $blueShadow;
+    .icon-bar {
+      background:$blueShadow;
+    }
+  }
+}

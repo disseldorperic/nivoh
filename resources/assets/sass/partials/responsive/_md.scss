@@ -1,0 +1,34 @@
+@media(max-width:1199px){
+  h1, h2 {
+    font-size:24px;
+  }
+  .btn-default {
+    padding:10px 15px 8px 15px;
+  }
+  .newsletter {
+    h2 {
+      font-size:22px;
+    }
+  }
+  #btnOpdrachtgever,
+  #btnInstallateur {
+    width:270px;
+    max-width:270px;
+    background-position: -50px 0;
+  }
+  #btnInstallateur {
+    &:hover {
+      background-position: -380px 0;
+    }
+  }
+  #btnOpdrachtgever {
+    margin-left:15px;
+  }
+  .newsItem {
+    .item {
+      h3 {
+        font-size:20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@media(max-width:991px){
+  .title {
+    padding:15px;
+  }
+  section.white {
+    padding:15px;
+  }
+
+  .newsletter {
+    h2 {
+      padding:0;
+      &:after {
+        background-image:none;
+      }
+    }
+    .newsletterForm {
+      padding:10px;
+    }
+  }
+
+  #btnOpdrachtgever,
+  #btnInstallateur {
+    width:210px;
+    max-width:100%;
+  }
+  #btnOpdrachtgever {
+    margin-left:20px;
+    background-position:-100px 0;
+    &:hover {
+      background-position:-430px 0;
+    }
+  }
+
+  .form-group {
+    margin-bottom:10px;
+
+    .form-control {
+      height:44px;
+      font-weight:normal;
+    }
+  }
+}

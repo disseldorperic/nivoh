@@ -1,4 +1,11 @@
 @media(max-width:767px){
+  body {
+    background-size:150%;
+  }
+  .menu {
+    background:rgba(24,122,191, 0.8);
+    border:0;
+  }
   .navbar-toggle {
     background:#ffffff;
     border-radius:0;
@@ -6,6 +13,31 @@
     border-bottom:5px solid $blueShadow;
     .icon-bar {
       background:$blueShadow;
+    }
+  }
+  header {
+    .logo {
+      margin:15px 0;
+      max-width:220px;
+    }
+  }
+  #btnOpdrachtgever,
+  #btnInstallateur {
+    width:380px;
+    max-width:330px;
+  }
+  #btnInstallateur {
+    background-position:0 0;
+    &:hover {
+      background-position:-330px 0;
+    }
+  }
+  #btnOpdrachtgever {
+    margin-left:0;
+    margin-top:30px;
+    background-position:0 0;
+    &:hover {
+      background-position:-330px 0;
     }
   }
 }

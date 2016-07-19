@@ -8,7 +8,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        {!! CMS::group('blok1', ['titleblok1', 'Titel', 'text']) !!}
+        {!! CMS::input('blok1', ['titleblok1', 'Titel', 'text']) !!}
     </div>
     <div class="col-md-12">
         {!! CMS::tinymce('content1') !!}
@@ -19,7 +19,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        {!! CMS::group('blok2', ['titleblok2', 'Titel', 'text']) !!}
+        {!! CMS::input('blok2', ['titleblok2', 'Titel', 'text']) !!}
     </div>
     <div class="col-md-12">
         {!! CMS::tinymce('content2') !!}
@@ -30,7 +30,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        {!! CMS::group('blok3', ['titleblok3', 'Titel', 'text']) !!}
+        {!! CMS::input('blok3', ['titleblok3', 'Titel', 'text']) !!}
     </div>
     <div class="col-md-12">
         {!! CMS::tinymce('content3') !!}

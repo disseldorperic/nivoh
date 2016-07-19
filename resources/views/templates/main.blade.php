@@ -4,15 +4,15 @@
     @include('partials._title')
 
         <section class="white textTemp">
+            <h1>
+                {!! Content::get('blok1.title') !!}
+            </h1>
+
             @if (Content::get('blok1.image') != '')
                 <div class="image">
                     <img src="{!! Content::image('blok1.image') ?: '/images/placeholder.jpg' !!}" class="img-responsive" alt="{!! Content::get('blok1.title') !!}" />
                 </div>
             @endif
-
-            <h1>
-                {!! Content::get('blok1.title') !!}
-            </h1>
 
             {!! Content::get('content1') !!}
         </section>

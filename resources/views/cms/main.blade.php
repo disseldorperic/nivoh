@@ -8,7 +8,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        {!! CMS::group('blok1', ['title', 'Titel', 'text'], ['image', 'Afbeelding', 'image', ['width' => 750, 'height' => 250, 'cropper' => true]]) !!}
+        {!! CMS::group('blok1', ['title', 'Titel', 'text'], ['image', 'Afbeelding', 'image', ['width' => 750, 'height' => 200, 'cropper' => true]]) !!}
     </div>
 
     <div class="col-md-12">
@@ -20,7 +20,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        {!! CMS::group('blok2', ['title', 'Titel', 'text'], ['image', 'Afbeelding', 'image', ['width' => 750, 'height' => 250, 'cropper' => true]]) !!}
+        {!! CMS::group('blok2', ['title', 'Titel', 'text'], ['image', 'Afbeelding', 'image', ['width' => 750, 'height' => 200, 'cropper' => true]]) !!}
     </div>
 
     <div class="col-md-12">
@@ -32,7 +32,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        {!! CMS::group('blok3', ['title', 'Titel', 'text'], ['image', 'Afbeelding', 'image', ['width' => 750, 'height' => 250, 'cropper' => true]]) !!}
+        {!! CMS::group('blok3', ['title', 'Titel', 'text'], ['image', 'Afbeelding', 'image', ['width' => 750, 'height' => 200, 'cropper' => true]]) !!}
     </div>
 
     <div class="col-md-12">

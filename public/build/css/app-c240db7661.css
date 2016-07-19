@@ -286,7 +286,8 @@ section.white {
 
 section.textTemp .image {
   padding: 2px;
-  border: 1px solid #187abf; }
+  border: 1px solid #187abf;
+  margin-bottom: 30px; }
 
 /* NIEUWS */
 .newsItem .image {

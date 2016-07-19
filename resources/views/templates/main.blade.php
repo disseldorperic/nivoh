@@ -46,4 +46,8 @@
             {!! Content::get('content3') !!}
         </section>
     @endif
+
+    @if (Content::identifier() == 'initiatiefnemers')
+        @include('partials._initiatiefnemers')
+    @endif
 @endsection

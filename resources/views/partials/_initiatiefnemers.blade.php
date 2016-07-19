@@ -3,11 +3,14 @@
         @foreach (Content::items('initiatiefnemers') AS $item)
             <div class="col-md-4">
                 <div class="initiatiefnemer">
-                    <a href="{!! Content::get('initiatiefnemer.link') !!}" target="_blank">
-                        <img src="{!! Content::image('initiatiefnemer.image') ?: '/images/placeholder.jpg' !!}" class="img-responsive" alt="{!! Content::get('initiatiefnemer.name') !!}" />
-                        <h3>{!! Content::get('initiatiefnemer.name') !!}</h3>
+                    <a id="box-1" class="box" href="{{ $item->get('initiatiefnemer.link') }}" target="_blank">
+                        <img id="image-1" src="{!! $item->image('initiatiefnemer.image') ?: '/images/nologo.jpg' !!}" alt="{{ $item->get('initiatiefnemer.name') }} />
+                    <span class="caption">
+                    <p>{{ $item->get('initiatiefnemer.name') }}</p>
+                    </span>
                     </a>
                 </div>
+
             </div>
         @endforeach
     </div>

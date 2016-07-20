@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'path'       => false,
+    'path'       => '/nieuws',
     'archive'    => '/nieuws/archief',
     'title'      => 'Nieuws',
     'title_item' => ' - Nieuws',

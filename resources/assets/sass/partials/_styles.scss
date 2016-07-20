@@ -27,6 +27,11 @@ h1, h2 {
 
 a {
   color: $blueShadow;
+  outline:0;
+  &:hover,
+  &:focus {
+    outline:0;
+  }
 }
 
 a.read {
@@ -61,13 +66,14 @@ a.read {
   font-size: 20px;
   border-bottom: 5px solid $blueShadow;
   border-radius: 0;
-  padding: 15px;
+  padding: 13px 15px 11px 15px;
   text-transform: uppercase;
   &:hover,
   &:focus {
     background: $blueShadow;
     color: white;
     border-bottom: 5px solid #012c4a;
+    outline:0;
   }
 }
 
@@ -175,6 +181,10 @@ a.read {
 
 // TITLE
 
+.mainContent {
+  min-height:820px;
+}
+
 .title {
   background: rgba(0, 0, 0, 0.8);
   display: block;
@@ -242,6 +252,9 @@ section.white {
       &:last-child {
         margin-bottom:0;
       }
+    }
+    a {
+      color:$blue;
     }
     .image {
       padding: 2px;
@@ -353,69 +366,159 @@ section.white {
     border-radius: 0;
     height: 50px;
     box-shadow: none;
-    font-weight: bold;
+    font-weight: normal;
+  }
+  textarea.form-control {
+    resize:none;
+    height:150px;
   }
 }
 
 // INITIATIEFNEMERS
 
 .initiatiefnemers {
-  margin-top:30px;
+  margin-top:15px;
   width:100%;
   float:left;
 }
 .initiatiefnemer {
+  cursor: pointer;
+  height: 182px;
+  float: left;
+  margin: 15px 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display:table;
   a {
     &.box {
-      border: 5px solid #fff;
-      cursor: pointer;
-      height: 182px;
-      float: left;
-      margin: 5px;
-      position: relative;
-      overflow: hidden;
-      width: 200px;
-      -webkit-box-shadow: 1px 1px 1px 1px #ccc;
-      -moz-box-shadow: 1px 1px 1px 1px #ccc;
-      box-shadow: 1px 1px 1px 1px #ccc;
-      .caption {
-        height: 30px;
-        width: 200px;
-        display: block;
-        bottom: -30px;
-        line-height: 25pt;
-        text-align: center;
-        background-color: rgba(0,0,0,0.8);
-        position: absolute;
-        color: #fff;
-        z-index: 100;
-        -webkit-transition: all 300ms ease-out;
-        -moz-transition: all 300ms ease-out;
-        -o-transition: all 300ms ease-out;
-        -ms-transition: all 300ms ease-out;
-        transition: all 300ms ease-out;
-        left: 0;
+      background:#fff;
+      height:100%;
+      padding:15px;
+      display:table-cell;
+      text-align: center;
+      vertical-align:middle;
+      position:relative;
+      img {
+        max-width:100%;
+      }
+      span {
+        position:absolute;
+        bottom:-46px;
+        left:0;
+        color:$blueShadow;
+        font-family: $font-family-title;
+        font-size:18px;
+        text-transform: uppercase;
+        height:44px;
+        display:block;
+        width:100%;
+        padding:10px 10px 8px 10px;
+        background:rgba(24,122,191,1);
+        -webkit-transition: all 100ms ease-out;
+        -moz-transition: all 100ms ease-out;
+        -o-transition: all 100ms ease-out;
+        -ms-transition: all 100ms ease-out;
+        transition: all 100ms ease-out;
+        i {
+          font-size:15px;
+          margin-left:3px;
+        }
       }
       &:hover {
-        .caption {
-          -moz-transform: translateY(-100%);
-          -o-transform: translateY(-100%);
-          -webkit-transform: translateY(-100%);
-          opacity: 1;
-          transform: translateY(-100%);
+        span {
+          bottom:0;
+
         }
       }
     }
-    img {
-      max-width:100%;
-      position: absolute;
-      left: 0;
-      -webkit-transition: all 300ms ease-out;
-      -moz-transition: all 300ms ease-out;
-      -o-transition: all 300ms ease-out;
-      -ms-transition: all 300ms ease-out;
-      transition: all 300ms ease-out;
+  }
+}
+
+#contactformulier {
+  h2 {
+    color:$blue;
+    padding:0 0 8px 0;
+  }
+  .form-control {
+    font-weight:normal;
+  }
+  button {
+    padding:15px 30px 12px 30px;
+    i {
+      font-size:20px;
+      margin-left:8px;
     }
+  }
+}
+
+// NIEUWS
+
+.newsitem {
+  h2 {
+    margin:0 0 10px 0;
+    padding:0;
+    float:left;
+    color:$blue;
+  }
+  h4 {
+    float:right;
+    color:$grayLight;
+    font-family: $font-family-base;
+    font-size:14px;
+    margin-top:4px;
+  }
+  p {
+    width:100%;
+    float:left;
+  }
+  .btn-default {
+    padding:10px 30px 8px 30px;
+    margin:10px 0 0 0;
+    float:right;
+  }
+}
+#newsDetail {
+  .back {
+    float:left;
+    width:100%;
+    margin-bottom:25px;
+    a {
+      float:left;
+      &:hover,
+      &:focus {
+        text-decoration:none;
+        color:$blue;
+      }
+    }
+  }
+  h1 {
+    float:left;
+    padding:0 0 10px 0;
+    color:$blue;
+  }
+  h4 {
+    float:right;
+    color:$grayLight;
+    margin-bottom:0;
+    margin-top:6px;
+    font-family: $font-family-base;
+    font-size:14px;
+  }
+  p {
+    float:left;
+    width:100%;
+    margin-bottom:24px;
+    &:last-child {
+      margin-bottom:0;
+    }
+  }
+  .image {
+    padding: 2px;
+    border: 1px solid $blue;
+    float:left;
+    width:100%;
+    margin-bottom:30px;
   }
 }
 

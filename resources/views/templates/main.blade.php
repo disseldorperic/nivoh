@@ -50,4 +50,10 @@
     @if (Content::identifier() == 'initiatiefnemers')
         @include('partials._initiatiefnemers')
     @endif
+
+    @if (Content::identifier() == 'contact')
+        @include('partials._contactform')
+    @endif
+
+
 @endsection

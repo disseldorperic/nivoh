@@ -3,7 +3,7 @@
         {!! CMS::input('short', 'Content', 'textarea') !!}
     </div>
     <div class="col-md-12">
-        {!! CMS::upload('main', 'Afbeelding', ['type' => 'image', 'width' => 800, 'height' => 110, 'cropper' => true]) !!}
+        {!! CMS::upload('main', 'Afbeelding', ['type' => 'image', 'width' => 800, 'height' => 200, 'cropper' => true]) !!}
     </div>
 </div>
 

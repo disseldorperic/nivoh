@@ -310,10 +310,14 @@ section.white {
 
 .newsItem .item h3 {
   font-size: 22px;
-  color: #034877; }
+  color: #034877;
+  margin-bottom: 0; }
+
+.newsItem .item p {
+  margin-bottom: 0; }
 
 .listNews {
-  margin-top: 30px;
+  margin-top: 15px;
   float: left;
   width: 100%; }
   .listNews ul {
@@ -332,7 +336,7 @@ section.white {
           font-family: FontAwesome;
           position: absolute;
           left: 0;
-          top: 1px;
+          top: -1px;
           font-size: 14px;
           color: #dfe0e0; }
         .listNews ul li a:hover, .listNews ul li a:focus {
@@ -444,7 +448,7 @@ section.white {
     margin-left: 8px; }
 
 .newsitem h2 {
-  margin: 0 0 10px 0;
+  margin: 0;
   padding: 0;
   float: left;
   color: #187abf; }
@@ -477,7 +481,7 @@ section.white {
 
 #newsDetail h1 {
   float: left;
-  padding: 0 0 10px 0;
+  padding: 0;
   color: #187abf; }
 
 #newsDetail h4 {

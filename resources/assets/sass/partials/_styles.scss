@@ -276,12 +276,16 @@ section.white {
     h3 {
       font-size: 22px;
       color: $blueShadow;
+      margin-bottom:0;
+    }
+    p {
+      margin-bottom:0;
     }
   }
 }
 
 .listNews {
-  margin-top: 30px;
+  margin-top: 15px;
   float: left;
   width: 100%;
   ul {
@@ -300,7 +304,7 @@ section.white {
           font-family: FontAwesome;
           position: absolute;
           left: 0;
-          top: 1px;
+          top: -1px;
           font-size: 14px;
           color: #dfe0e0;
         }
@@ -456,7 +460,7 @@ section.white {
 
 .newsitem {
   h2 {
-    margin:0 0 10px 0;
+    margin:0;
     padding:0;
     float:left;
     color:$blue;
@@ -494,7 +498,7 @@ section.white {
   }
   h1 {
     float:left;
-    padding:0 0 10px 0;
+    padding:0;
     color:$blue;
   }
   h4 {

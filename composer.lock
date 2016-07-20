@@ -167,7 +167,7 @@
             "source": {
                 "type": "git",
                 "url": "sshd@nas.goedemiddag.nl:/shares/git/cms.git",
-                "reference": "9b599de650fb33ceabac19b95cb325943956c4e1"
+                "reference": "d356006bd382a39a2841a1c0c6b397222db6950b"
             },
             "require": {
                 "jenssegers/date": "^3.0"
@@ -189,7 +189,7 @@
                 "CMS",
                 "laravel"
             ],
-            "time": "2016-07-01 07:55:55"
+            "time": "2016-07-20 09:21:45"
         },
         {
             "name": "jakub-onderka/php-console-color",

@@ -12,6 +12,7 @@
 
         <a class="button" id="btnInstallateur" href="" target="_blank">
             <span class="ikben">Ik ben een:</span>
+
             <div class="branche">
                 <span class="name">Adviseur</span>
                 <span class="name">Installateur</span>
@@ -24,6 +25,7 @@
 
         <a class="button" id="btnOpdrachtgever" href="" target="_blank">
             <span class="ikben">Ik ben een:</span>
+
             <div class="branche">
                 <span class="name">Opdrachtgever</span>
                 <span class="name">Branchevereniging</span>
@@ -40,27 +42,26 @@
         <h2>
             Blijf op de <span>hoogte</span>
         </h2>
+        @if ($newsItem = News::last())
+            <div class="newsItem">
+                <div class="image">
+                    <img src="{{ $newsItem->image('main') }}" class="img-responsive" alt="{{ $newsItem->title() }}"/>
+                </div>
+                <div class="item">
+                    <h3>{{ $newsItem->title() }}</h3>
 
-        <div class="newsItem">
-            <div class="image">
-                <img src="/images/news.jpg" class="img-responsive" alt="News" />
+                    <p>{!! $newsItem->get('short') !!}</p>
+
+                    {!! Content::button('Lees verder', $newsItem, ['class' => 'read']) !!}
+                </div>
             </div>
-            <div class="item">
-                <h3>Hier komt een titel van een nieuwsbericht</h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eligendi necessitatibus numquam provident quis repudiandae voluptatum! Accusamus aliquam consequuntur earum impedit labore laboriosam modi, non, pariatur, repellendus rerum voluptas voluptatibus!</p>
-
-                <a class="read" href="">Lees verder</a>
-            </div>
-        </div>
+        @endif
 
         <div class="listNews">
             <ul>
-                <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
-                <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
-                <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
-                <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
-                <li><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
+                @foreach (News::last(1,5) as $newsItem)
+                    <li><a href="{!! $newsItem->link() !!}">{{ $newsItem->title() }}</a></li>
+                @endforeach
             </ul>
         </div>
 

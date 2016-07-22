@@ -629,7 +629,9 @@ section.white {
   .initiatiefnemer {
     margin: 15px 0 0 0; }
   footer {
-    margin-top: 75px; }
+    padding-top: 15px;
+    margin-top: 75px;
+    overflow-x: hidden; }
     footer .about h4 {
       font-size: 30px; }
     footer .about a.read {

@@ -612,6 +612,37 @@ section.white {
     margin-top: 30px;
     background-position: 0 0; }
     #btnOpdrachtgever:hover {
-      background-position: -330px 0; } }
+      background-position: -330px 0; }
+  .newsitem h2, .newsitem h4 {
+    width: 100% !important;
+    float: left !important; }
+  .newsitem h4 {
+    margin-top: 6px; }
+  .newsitem .btn-default {
+    width: 100%; }
+  #contactformulier button {
+    width: 100%; }
+  section.white.textTemp .image {
+    margin-bottom: 15px; }
+  .initiatiefnemers {
+    margin-top: 0; }
+  .initiatiefnemer {
+    margin: 15px 0 0 0; }
+  footer {
+    margin-top: 75px; }
+    footer .about h4 {
+      font-size: 30px; }
+    footer .about a.read {
+      color: #187abf; }
+      footer .about a.read:after {
+        color: #187abf; }
+    footer .contact h4 {
+      font-family: "DIN_1451 W01 Engschrift";
+      font-size: 30px;
+      text-transform: uppercase; }
+    footer .contact p {
+      font-size: inherit; }
+    footer:before {
+      top: -30px; } }
 
 /*# sourceMappingURL=app.css.map */

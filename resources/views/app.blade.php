@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
+    <link rel="stylesheet" href="/css/app.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,30 +25,30 @@
     <![endif]-->
 </head>
 <body>
-    @include('partials._header')
+@include('partials._header')
 
-    <section class="mainContent">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 sidebar">
-                    @include('partials._nav')
+<section class="mainContent">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 sidebar">
+                @include('partials._nav')
 
-                    @include('partials._newsletter')
-                </div>
-                <div class="col-sm-8 main">
-                    @yield('content')
-                </div>
+                @include('partials._newsletter')
+            </div>
+            <div class="col-sm-8 main">
+                @yield('content')
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    @include('partials._footer')
+@include('partials._footer')
 
 
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    @yield('scripts')
+@yield('scripts')
 
 </body>
 </html>

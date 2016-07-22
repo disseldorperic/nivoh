@@ -7,7 +7,7 @@
                     <h4>Over Nivoh</h4>
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias amet ducimus eveniet fugiat illum laudantium magni maxime necessitatibus, neque nulla perferendis quae quos tempora temporibus totam voluptates! At, modi!</p>
-                    <a class="read" href="">Lees verder</a>
+                    <a class="read" href="{{ Content::link('stichting-nivoh') }}">Lees verder</a>
                 </div>
             </div>
             <div class="col-md-5 col-md-offset-1">

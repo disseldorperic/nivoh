@@ -39,4 +39,6 @@
             </a>
         </div>
     </div>
+
+    <a class="backHome" href="/"><i class="fa fa-home"></i> home</a>
 @endsection

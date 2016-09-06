@@ -6,7 +6,7 @@
                 <div class="about">
                     <h4>Over Nivoh</h4>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias amet ducimus eveniet fugiat illum laudantium magni maxime necessitatibus, neque nulla perferendis quae quos tempora temporibus totam voluptates! At, modi!</p>
+                    <p>Stichting Nivoh heeft als missie het verduidelijken, verbeteren en borgen van wet- en regelgeving ten aanzien van veilig werken op hoogte en het verrichten van alles wat daarmee verband houdt, of daartoe bevorderlijk kan zijn. </p>
                     <a class="read" href="{{ Content::link('stichting-nivoh') }}">Lees verder</a>
                 </div>
             </div>

@@ -19,6 +19,8 @@
 
 
         <div class="faq">
+
+            <h3>Algemene vragen</h3>
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <?php
                     $i = 1;

@@ -20,31 +20,83 @@
 
         <div class="faq">
 
-                <h3>Algemene vragen</h3>
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <?php
-                        $i = 1;
-                    ?>
-                        @foreach (Content::items('faqalgemeen') AS $item)
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab" id="heading<?php echo $i ?>">
-                                <h4 class="panel-title">
-                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i ?>" aria-expanded="true" aria-controls="collapse<?php echo $i ?>">
-                                        {{ $item->get('question') }}
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse<?php echo $i ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php echo $i ?>">
-                                <div class="panel-body">
-                                    {!! $item->get('answer') !!}
-                                </div>
+            <h3>Algemene vragen</h3>
+            <div class="panel-group" id="faqGroup" role="tablist" aria-multiselectable="true">
+                <?php
+                    $i = 1;
+                ?>
+                    @foreach (Content::items('faqalgemeen') AS $item)
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headAlgemeen<?php echo $i ?>" data-toggle="collapse" data-parent="#faqGroup" data-target="#algemeen<?php echo $i ?>">
+                            <h4 class="panel-title">
+                                <a role="button">
+                                    {{ $item->get('question') }} <i class="fa fa-plus"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="algemeen<?php echo $i ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headAlgemeen<?php echo $i ?>">
+                            <div class="panel-body">
+                                {!! $item->get('answer') !!}
                             </div>
                         </div>
-                        <?php
-                            $i++;
-                        ?>
-                    @endforeach
-                </div>
+                    </div>
+                    <?php
+                        $i++;
+                    ?>
+                @endforeach
+
+
+            <h3>Vragen door installateurs, adviseurs en inspecteurs</h3>
+
+                <?php
+                $i = 1;
+                ?>
+                @foreach (Content::items('faqinstallateurs') AS $item)
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headInstallateurs<?php echo $i ?>" data-toggle="collapse" data-parent="#faqGroup" data-target="#installateurs<?php echo $i ?>">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accInstallateurs" href="#installateurs<?php echo $i ?>" aria-expanded="true" aria-controls="installateurs<?php echo $i ?>">
+                                    {{ $item->get('question') }} <i class="fa fa-plus"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="installateurs<?php echo $i ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headInstallateurs<?php echo $i ?>">
+                            <div class="panel-body">
+                                {!! $item->get('answer') !!}
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                    $i++;
+                    ?>
+                @endforeach
+
+
+            <h3>Vragen door opdrachtgevers, architecten, brancheverenigingen en andere partijen</h3>
+
+                <?php
+                $i = 1;
+                ?>
+                @foreach (Content::items('faqopdrachtgevers') AS $item)
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headOpdrachtgevers<?php echo $i ?>" data-toggle="collapse" data-parent="#faqGroup" data-target="#opdrachtgevers<?php echo $i ?>">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accOpdrachtgevers" href="#opdrachtgevers<?php echo $i ?>" aria-expanded="true" aria-controls="opdrachtgevers<?php echo $i ?>">
+                                    {{ $item->get('question') }} <i class="fa fa-plus"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="opdrachtgevers<?php echo $i ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headOpdrachtgevers<?php echo $i ?>">
+                            <div class="panel-body">
+                                {!! $item->get('answer') !!}
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                    $i++;
+                    ?>
+                @endforeach
+
 
         </div>
     </section>
@@ -55,6 +107,10 @@
 
 @section('scripts')
     <script>
-
+        $('.collapse').on('shown.bs.collapse', function(){
+            $(this).parent().find(".fa-plus").removeClass("fa-plus").addClass("fa-minus");
+        }).on('hidden.bs.collapse', function(){
+            $(this).parent().find(".fa-minus").removeClass("fa-minus").addClass("fa-plus");
+        });
     </script>
 @endsection

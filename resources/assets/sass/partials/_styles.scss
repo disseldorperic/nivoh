@@ -534,12 +534,28 @@ section.white {
 
 .faq {
     h3 {
-
+      font-size:21px;
+      margin-top:30px;
     }
     .panel-group {
       .panel {
         background:white;
+        border-color:$blue;
         border-radius:0;
+        .panel-heading {
+          background:white;
+        }
+        .panel-body {
+          p, ul, ol {
+            margin-bottom:17px;
+            &:last-child {
+              margin:0;
+            }
+          }
+          ul {
+            padding-left:17px;
+          }
+        }
       }
     }
     h4.panel-title {
@@ -548,6 +564,17 @@ section.white {
       font-family: $font-family-base;
       font-weight:normal;
       a {
+        color:$blueShadow;
+        position:relative;
+        width:100%;
+        display:block;
+        i {
+          position:absolute;
+          right:-5px;
+          top:2px;
+          width:11px;
+          height:11px;
+        }
         &:hover,
         &:focus {
           text-decoration:none;

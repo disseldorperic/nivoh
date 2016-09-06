@@ -510,18 +510,42 @@ section.white {
   width: 100%;
   margin-bottom: 30px; }
 
+.faq h3 {
+  font-size: 21px;
+  margin-top: 30px; }
+
 .faq .panel-group .panel {
   background: white;
+  border-color: #187abf;
   border-radius: 0; }
+  .faq .panel-group .panel .panel-heading {
+    background: white; }
+  .faq .panel-group .panel .panel-body p, .faq .panel-group .panel .panel-body ul, .faq .panel-group .panel .panel-body ol {
+    margin-bottom: 17px; }
+    .faq .panel-group .panel .panel-body p:last-child, .faq .panel-group .panel .panel-body ul:last-child, .faq .panel-group .panel .panel-body ol:last-child {
+      margin: 0; }
+  .faq .panel-group .panel .panel-body ul {
+    padding-left: 17px; }
 
 .faq h4.panel-title {
   font-size: 14px;
   text-transform: inherit;
   font-family: "Open Sans", sans-serif;
   font-weight: normal; }
-  .faq h4.panel-title a:hover, .faq h4.panel-title a:focus {
-    text-decoration: none;
-    color: #034877; }
+  .faq h4.panel-title a {
+    color: #034877;
+    position: relative;
+    width: 100%;
+    display: block; }
+    .faq h4.panel-title a i {
+      position: absolute;
+      right: -5px;
+      top: 2px;
+      width: 11px;
+      height: 11px; }
+    .faq h4.panel-title a:hover, .faq h4.panel-title a:focus {
+      text-decoration: none;
+      color: #034877; }
 
 .form-control::-webkit-input-placeholder {
   color: #187abf !important; }

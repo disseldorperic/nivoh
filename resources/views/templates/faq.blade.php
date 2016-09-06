@@ -19,33 +19,33 @@
 
 
         <div class="faq">
-            @if (in_array(($identifier = Content::identifier()), ['faqalgemeen', 'faqinstallateurs', 'faqopdrachtgevers']))
-            <h3>Algemene vragen</h3>
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <?php
-                    $i = 1;
-                ?>
-                @foreach (Content::items($identifier) AS $item)
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading<?php echo $i ?>">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i ?>" aria-expanded="true" aria-controls="collapse<?php echo $i ?>">
-                                    {{ $item->get('question') }}
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse<?php echo $i ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php echo $i ?>">
-                            <div class="panel-body">
-                                {!! $item->get('answer') !!}
+
+                <h3>Algemene vragen</h3>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <?php
+                        $i = 1;
+                    ?>
+                        @foreach (Content::items('faqalgemeen') AS $item)
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading<?php echo $i ?>">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i ?>" aria-expanded="true" aria-controls="collapse<?php echo $i ?>">
+                                        {{ $item->get('question') }}
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse<?php echo $i ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php echo $i ?>">
+                                <div class="panel-body">
+                                    {!! $item->get('answer') !!}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <?php
-                        $i++;
-                    ?>
-                @endforeach
-            </div>
-            @endif
+                        <?php
+                            $i++;
+                        ?>
+                    @endforeach
+                </div>
+
         </div>
     </section>
 
@@ -55,6 +55,6 @@
 
 @section('scripts')
     <script>
-        $('.collapse').collapse()
+
     </script>
 @endsection

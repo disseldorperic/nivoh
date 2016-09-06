@@ -530,6 +530,34 @@ section.white {
   }
 }
 
+// VEELGESTELDE VRAGEN
+
+.faq {
+    h3 {
+
+    }
+    .panel-group {
+      .panel {
+        background:white;
+        border-radius:0;
+      }
+    }
+    h4.panel-title {
+      font-size:14px;
+      text-transform:inherit;
+      font-family: $font-family-base;
+      font-weight:normal;
+      a {
+        &:hover,
+        &:focus {
+          text-decoration:none;
+          color:$blueShadow;
+        }
+      }
+
+    }
+}
+
 
 .form-control::-webkit-input-placeholder {
   color: $blue !important;

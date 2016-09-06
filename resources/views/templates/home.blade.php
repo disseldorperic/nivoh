@@ -10,7 +10,7 @@
             Wilt u <span>meer informatie</span>? Maak hieronder uw keuze.
         </h1>
 
-        <a class="button" id="btnInstallateur" href="{!! Content::link('installateur') !!}" target="_blank">
+        <a class="button" id="btnInstallateur" href="{!! Content::link('installateur') !!}">
             <span class="ikben">Ik ben een:</span>
 
             <div class="branche">
@@ -23,7 +23,7 @@
             </div>
         </a>
 
-        <a class="button" id="btnOpdrachtgever" href="{!! Content::link('opdrachtgever') !!}" target="_blank">
+        <a class="button" id="btnOpdrachtgever" href="{!! Content::link('opdrachtgever') !!}">
             <span class="ikben">Ik ben een:</span>
 
             <div class="branche">

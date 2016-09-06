@@ -19,13 +19,13 @@
 
 
         <div class="faq">
-
+            @if (in_array(($identifier = Content::identifier()), ['faqalgemeen', 'faqinstallateurs', 'faqopdrachtgevers']))
             <h3>Algemene vragen</h3>
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <?php
                     $i = 1;
                 ?>
-                @foreach (Content::items('faq') AS $item)
+                @foreach (Content::items($identifier) AS $item)
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="heading<?php echo $i ?>">
                             <h4 class="panel-title">
@@ -44,8 +44,8 @@
                         $i++;
                     ?>
                 @endforeach
-
             </div>
+            @endif
         </div>
     </section>
 

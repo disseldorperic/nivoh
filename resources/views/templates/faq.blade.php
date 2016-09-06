@@ -20,26 +20,39 @@
 
         <div class="faq">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <?php
+                    $i = 1;
+                ?>
                 @foreach (Content::items('faq') AS $item)
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                {!! Content::get('question') !!}
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body">
-                            {!! Content::get('answer') !!}
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="heading<?php echo $i ?>">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i ?>" aria-expanded="true" aria-controls="collapse<?php echo $i ?>">
+                                    {{ $item->get('question') }}
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse<?php echo $i ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading<?php echo $i ?>">
+                            <div class="panel-body">
+                                {!! $item->get('answer') !!}
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <?php
+                        $i++;
+                    ?>
                 @endforeach
+
             </div>
         </div>
     </section>
 
 
 
+@endsection
+
+@section('scripts')
+    <script>
+        $('.collapse').collapse()
+    </script>
 @endsection

@@ -642,6 +642,8 @@ section.white {
   header .logo {
     margin: 15px 0;
     max-width: 220px; }
+  .mainContent {
+    min-height: auto; }
   #btnOpdrachtgever,
   #btnInstallateur {
     width: 380px;

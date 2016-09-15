@@ -213,6 +213,8 @@ body {
       background: #fff;
       top: 0;
       position: absolute;
-      content: ""; } }
+      content: ""; }
+  .backHome {
+    display: none; } }
 
 /*# sourceMappingURL=keurmerk.css.map */

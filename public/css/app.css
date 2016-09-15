@@ -365,6 +365,8 @@ section.white {
     font-weight: normal;
     position: relative;
     display: inline-block; }
+    .newsletter h2 span {
+      color: black; }
     .newsletter h2:after {
       content: "";
       background-image: url(/images/arrow.png);

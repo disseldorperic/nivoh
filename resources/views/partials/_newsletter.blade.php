@@ -1,5 +1,5 @@
 <div class="newsletter hidden-xs">
-    <h2>Op de hoogte blijven?</h2>
+    <h2>Op de <span>hoogte</span> blijven?</h2>
 
     <div class="newsletterForm">
         <form action="http://mailing.goedemiddag.nl/t/i/s/nslth/" method="post" id="subForm">

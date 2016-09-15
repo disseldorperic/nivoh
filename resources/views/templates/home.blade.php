@@ -40,7 +40,7 @@
 
     <section class="white" id="news">
         <h2>
-            Blijf op de <span>hoogte</span>
+            Nivoh <span>Nieuws</span>
         </h2>
         @if ($newsItem = News::last())
             <div class="newsItem">

@@ -14,4 +14,8 @@ var elixir = require('laravel-elixir');
 elixir(function (mix) {
     mix.sass('app.scss');
     mix.sass('keurmerk.scss', 'public/css/keurmerk.css');
+
+    mix.scripts('forms.js', 'public/js/forms.js', 'resources/assets/components/js');
 });
+
+

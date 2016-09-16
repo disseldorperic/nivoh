@@ -35,7 +35,7 @@
         <div class="row">
             <div class="col-sm-12 column">
                 <div class="form-group">
-                    <textarea class="form-control" name="vraag" placeholder="Vraag"></textarea>
+                    <textarea class="form-control" name="bericht" placeholder="Vraag"></textarea>
                 </div>
             </div>
         </div>

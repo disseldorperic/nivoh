@@ -57,3 +57,9 @@
 
 
 @endsection
+
+@section('scripts')
+    @if (Content::identifier() == 'contact')
+        <script src="/js/forms.js"></script>
+    @endif
+@endsection

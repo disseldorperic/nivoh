@@ -80,11 +80,14 @@
                                                     <br/><br/>
                                                     Hieronder vindt u de gegevens van uw aanvraag:<br/><br/>
 
+                                                    @if ($request->organisatie)
+                                                        <b>Organisatie:</b> {{ $request->organisatie }}<br/>
+                                                    @endif
+                                                    @if ($request->naam)
+                                                        <b>Naam:</b> {{ $request->naam }}<br/>
+                                                    @endif
                                                     <b>E-mail:</b> {{ $request->email }}<br/>
 
-                                                    @if ($request->telefoon)
-                                                        <b>Telefoon:</b> {{ $request->telefoon }}<br/>
-                                                    @endif
                                                     <br/><b>Bericht:</b><br> {{ $request->bericht }}
 
                                                     <br/><br/>

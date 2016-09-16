@@ -3,7 +3,7 @@
 @section('content')
     <div class="home">
         <div class="logo">
-            <a href="/"><img src="/images/select/logo.png" alt="Stichting Nivoh" /></a>
+            <a href="/"><img src="/images/select/logo@2x.png" width="296" height="78" alt="Stichting Nivoh" /></a>
         </div>
         <div class="select">
             <a href="{{ Content::link('installateur') }}" class="installateur">

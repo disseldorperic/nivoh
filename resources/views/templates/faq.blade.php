@@ -81,7 +81,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headOpdrachtgevers<?php echo $i ?>" data-toggle="collapse" data-parent="#faqGroup" data-target="#opdrachtgevers<?php echo $i ?>">
                             <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accOpdrachtgevers" href="#opdrachtgevers<?php echo $i ?>" aria-expanded="true" aria-controls="opdrachtgevers<?php echo $i ?>">
+                                <a role="button">
                                     {{ $item->get('question') }} <i class="fa fa-plus"></i>
                                 </a>
                             </h4>

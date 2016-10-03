@@ -227,16 +227,18 @@ a.read {
 
 #btnOpdrachtgever {
   background: url(/images/btnOpdrachtgever.jpg) no-repeat 0 0;
-  width: 330px;
+  /*width: 330px;*/
+  width: 100%;
   max-width: 330px;
   max-height: 243px;
-  margin-left: 30px; }
+  /*margin-left:30px;*/ }
   #btnOpdrachtgever:hover {
     background: url(/images/btnOpdrachtgever.jpg) no-repeat -330px 0; }
 
 #btnInstallateur {
   background: url(/images/btnInstallateur.jpg) no-repeat 0 0;
-  width: 330px;
+  /*width: 330px;*/
+  width: 100%;
   max-width: 330px;
   max-height: 243px; }
   #btnInstallateur:hover {
@@ -595,8 +597,10 @@ section.white {
     background-position: -50px 0; }
   #btnInstallateur:hover {
     background-position: -380px 0; }
+  /*
   #btnOpdrachtgever {
-    margin-left: 15px; }
+    margin-left:15px;
+  } */
   .newsItem .item h3 {
     font-size: 20px; } }
 
@@ -615,10 +619,12 @@ section.white {
     padding: 10px; }
   #btnOpdrachtgever,
   #btnInstallateur {
-    width: 210px;
-    max-width: 100%; }
+    /*width:210px;*/
+    max-width: 330px;
+    width: 100%;
+    float: none; }
   #btnOpdrachtgever {
-    margin-left: 20px;
+    /*margin-left:20px;*/
     background-position: -100px 0; }
     #btnOpdrachtgever:hover {
       background-position: -430px 0; }
@@ -648,8 +654,8 @@ section.white {
     min-height: auto; }
   #btnOpdrachtgever,
   #btnInstallateur {
-    width: 380px;
-    max-width: 330px; }
+    /*width:380px;
+    max-width:330px;*/ }
   #btnInstallateur {
     background-position: 0 0; }
     #btnInstallateur:hover {

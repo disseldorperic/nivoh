@@ -23,11 +23,14 @@
 
   #btnOpdrachtgever,
   #btnInstallateur {
-    width:210px;
-    max-width:100%;
+    /*width:210px;*/
+    max-width:330px;
+    width:100%;
+    float:none;
+
   }
   #btnOpdrachtgever {
-    margin-left:20px;
+    /*margin-left:20px;*/
     background-position:-100px 0;
     &:hover {
       background-position:-430px 0;

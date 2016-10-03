@@ -165,17 +165,19 @@ a.read {
 
 #btnOpdrachtgever {
   background: url(/images/btnOpdrachtgever.jpg) no-repeat 0 0;
-  width: 330px;
+  /*width: 330px;*/
+  width:100%;
   max-width: 330px;
   max-height: 243px;
-  margin-left:30px;
+  /*margin-left:30px;*/
   &:hover {
     background: url(/images/btnOpdrachtgever.jpg) no-repeat -330px 0;
   }
 }
 #btnInstallateur {
   background: url(/images/btnInstallateur.jpg) no-repeat 0 0;
-  width: 330px;
+  /*width: 330px;*/
+  width:100%;
   max-width: 330px;
   max-height: 243px;
   &:hover {

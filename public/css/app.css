@@ -488,7 +488,9 @@ section.white {
 #newsDetail h1 {
   float: left;
   padding: 0;
-  color: #187abf; }
+  color: #187abf;
+  display: block;
+  width: 100%; }
 
 #newsDetail h4 {
   float: right;

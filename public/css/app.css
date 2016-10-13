@@ -422,7 +422,7 @@ section.white {
     position: relative;
     width: 100%; }
     .initiatiefnemer a.box img.img-responsive {
-      max-width: 100% !important;
+      max-width: 200px !important;
       width: auto !important; }
     .initiatiefnemer a.box span {
       position: absolute;

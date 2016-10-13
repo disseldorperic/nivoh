@@ -420,8 +420,9 @@ section.white {
     text-align: center;
     vertical-align: middle;
     position: relative; }
-    .initiatiefnemer a.box img {
-      max-width: 100%; }
+    .initiatiefnemer a.box img.img-responsive {
+      max-width: 100% !important;
+      width: auto !important; }
     .initiatiefnemer a.box span {
       position: absolute;
       bottom: -46px;

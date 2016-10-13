@@ -414,8 +414,9 @@ section.white {
       text-align: center;
       vertical-align:middle;
       position:relative;
-      img {
-        max-width:100%;
+      img.img-responsive {
+        max-width:100% !important;
+        width:auto !important;
       }
       span {
         position:absolute;

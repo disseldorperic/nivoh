@@ -405,18 +405,18 @@ section.white {
 
 .initiatiefnemer {
   cursor: pointer;
-  height: 180px;
   float: left;
   margin: 15px 0;
   position: relative;
   overflow: hidden;
   width: 230px;
-  display: table; }
+  display: block; }
   .initiatiefnemer a.box {
     background: #fff;
     height: 100%;
     padding: 15px;
-    display: table-cell;
+    display: block;
+    margin: 0 auto;
     text-align: center;
     vertical-align: middle;
     position: relative;

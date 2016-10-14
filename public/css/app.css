@@ -409,7 +409,7 @@ section.white {
   margin: 15px 0;
   position: relative;
   overflow: hidden;
-  width: 230px;
+  width: 100%;
   display: block; }
   .initiatiefnemer a.box {
     background: #fff;

@@ -398,12 +398,12 @@ section.white {
 }
 .initiatiefnemer {
   cursor: pointer;
-  height: 182px;
+  height: 180px;
   float: left;
   margin: 15px 0;
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 230px;
   display:table;
   a {
     &.box {
@@ -416,8 +416,7 @@ section.white {
       position:relative;
       width:100%;
       img.img-responsive {
-        max-width:200px !important;
-        width:auto !important;
+        max-width:100% !important;
       }
       span {
         position:absolute;

@@ -5,6 +5,6 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        {!! CMS::upload('image', 'Logo', ['type' => 'image', 'width' => null, 'height' => null, 'cropper' => false]) !!}
+        {!! CMS::upload('image', 'Logo', ['type' => 'image', 'width' => 230, 'height' => 180, 'cropper' => true]) !!}
     </div>
 </div>

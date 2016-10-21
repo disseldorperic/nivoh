@@ -6,6 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
     <meta name="description" content="{{ Content::description() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 

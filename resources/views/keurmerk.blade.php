@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <link href='https://fonts.googleapis.com/css?family=Lobster+Two:400italic|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="http://fast.fonts.net/jsapi/6a5d9d4d-6f72-4f7d-a838-7611ccac6246.js"></script>
+    <script type="text/javascript" src="https://fast.fonts.net/jsapi/6a5d9d4d-6f72-4f7d-a838-7611ccac6246.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">

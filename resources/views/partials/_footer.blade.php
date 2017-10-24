@@ -23,7 +23,7 @@
                         </div>
                         <div class="col-md-6">
                             <p>
-                                088 325 83 99 <br />
+                                088 325 83 60 <br />
                                 <a href="mailto:info@nivoh.nl">info@nivoh.nl</a>
                             </p>
                         </div>

@@ -5,19 +5,11 @@
     @include('partials._title')
 
     <section class="white" id="valbeveiliging">
-        <h1>Stichting Nivoh heeft een KOMO<sup>®</sup> Safety keurmerk voor de valbeveiligingsbranche ontwikkeld.</h1>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="videoWrapper">
-                    <iframe width="100%" height="388" src="https://www.youtube.com/embed/11gd6K4YOWs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Wilt u <span>meer informatie</span>? Maak hieronder uw keuze. </h2>
-            </div>
-        </div>
+        <h1>
+            Stichting Nivoh ontwikkelt een <span>keurmerk</span> voor de valbeveiligings- branche.
+            Wilt u <span>meer informatie</span>? Maak hieronder uw keuze.
+        </h1>
+
         <div class="row">
             <div class="col-sm-6">
                 <a class="button" id="btnInstallateur" href="{!! Content::link('installateur') !!}">

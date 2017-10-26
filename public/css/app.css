@@ -582,6 +582,9 @@ section.white {
 .form-control:focus:-ms-input-placeholder {
   color: #333 !important; }
 
+#valbeveiliging h1, #valbeveiliging h2 {
+  text-align: center; }
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;

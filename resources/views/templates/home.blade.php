@@ -15,7 +15,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h2>Wilt u <span>meer informatie</span>? Maak hieronder uw keuze. </h2>
+                <h2>Wilt u <span>meer informatie</span>? Maak hieronder uw keuze<font style="font-size:40px">:</font> </h2>
             </div>
         </div>
         <div class="row">

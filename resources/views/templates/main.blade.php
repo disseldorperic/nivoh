@@ -13,6 +13,27 @@
             {!! Content::get('blok1.title') !!}
         </h1>
         {!! Content::get('content1') !!}
+
+        @if (Content::identifier() == 'gecertificeerd')
+            <table class="table table-striped" id="table-certified">
+                <tr>
+                    <th>Organisatie</th>
+                    <th>Type Certificaat</th>
+                    <th>Status</th>
+                </tr>
+                @foreach (Content::items('gecertificeerd') AS $item)
+                    <tr>
+                        <td><a href="{{ $item->get('gecertificeerd.link') }}">{{ $item->get('gecertificeerd.name') }}</a></td>
+                        <td>{{ $item->get('gecertificeerd.type') }}</td>
+                        <td>Behaald
+                            @if ($item->get('gecertificeerd.status') != '')
+                                <a href="#" data-toggle="tooltip" data-placement="top" title="{{ $item->get('gecertificeerd.status') }}">meer info</a>
+                            @endif
+                        </td>
+                    </tr>
+                @endforeach
+            </table>
+        @endif
     </section>
 
     @if (Content::get('content2') != '')
@@ -55,22 +76,6 @@
         @include('partials._contactform')
     @endif
 
-    @if (Content::identifier() == 'gecertificeerd')
-        <table>
-            <tr>
-                <th>Organisatie</th>
-                <th>Type Certificaat</th>
-                <th>Status</th>
-            </tr>
-            @foreach (Content::items('gecertificeerd') AS $item)
-                <tr>
-                    <td><a href="{{ $item->get('gecertificeerd.link') }}">{{ $item->get('gecertificeerd.name') }}</a></td>
-                    <td>{{ $item->get('gecertificeerd.type') }}</td>
-                    <td>{{ $item->get('status') }}</td>
-                </tr>
-            @endforeach
-        </table>
-    @endif
 
 
 @endsection
@@ -79,4 +84,10 @@
     @if (Content::identifier() == 'contact')
         <script src="/js/forms.js"></script>
     @endif
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 @endsection

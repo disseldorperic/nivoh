@@ -156,6 +156,32 @@ a.read {
     border-bottom: 5px solid #012c4a;
     outline: 0; }
 
+.btn-certified {
+  background: #ed9e15;
+  color: white;
+  border: 0;
+  width: 100%;
+  font-family: "DIN_1451 W01 Engschrift";
+  font-size: 20px;
+  border-bottom: 5px solid #cc850a;
+  border-radius: 0;
+  padding: 19px 15px 17px 30px;
+  text-transform: uppercase;
+  font-weight: 500; }
+  .btn-certified:before {
+    content: "";
+    width: 53px;
+    height: 78px;
+    position: absolute;
+    left: 22px;
+    top: 11px;
+    background: url("/images/certified.png") no-repeat; }
+  .btn-certified:hover, .btn-certified:focus {
+    background: #cc850a;
+    color: white;
+    border-bottom: 5px solid #af7208;
+    outline: 0; }
+
 .button {
   width: 100%;
   position: relative;
@@ -517,6 +543,40 @@ section.white {
   width: 100%;
   margin-bottom: 30px; }
 
+.certified {
+  margin-top: 15px;
+  width: 100%;
+  float: left;
+  position: relative; }
+
+#table-certified tr th {
+  font-family: "DIN_1451 W01 Engschrift";
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  background: white;
+  border: 0; }
+  #table-certified tr th:last-child {
+    padding-left: 0px; }
+
+#table-certified tr td {
+  position: relative;
+  border: 0;
+  padding: 12px 8px; }
+  #table-certified tr td:last-child {
+    padding-left: 22px;
+    width: 170px; }
+    #table-certified tr td:last-child a {
+      margin-left: 7px; }
+    #table-certified tr td:last-child:before {
+      content: "\f00c";
+      font-family: FontAwesome;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      font-size: 16px;
+      color: #1bc486; }
+
 .faq h3 {
   font-size: 21px;
   margin-top: 30px; }
@@ -655,7 +715,13 @@ section.white {
     margin-bottom: 10px; }
     .form-group .form-control {
       height: 44px;
-      font-weight: normal; } }
+      font-weight: normal; }
+  .btn-certified {
+    padding: 15px 10px; }
+    .btn-certified:before {
+      background: transparent;
+      width: 0;
+      height: 0; } }
 
 @media (max-width: 767px) {
   body {

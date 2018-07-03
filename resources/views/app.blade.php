@@ -47,6 +47,10 @@
                 @include('partials._nav')
 
                 @include('partials._newsletter')
+
+                {{--
+                @include('partials._certified')
+                --}}
             </div>
             <div class="col-sm-8 main">
                 @yield('content')

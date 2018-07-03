@@ -81,6 +81,36 @@ a.read {
   }
 }
 
+.btn-certified {
+  background: #ed9e15;
+  color: white;
+  border: 0;
+  width:100%;
+  font-family: $font-family-title;
+  font-size: 20px;
+  border-bottom: 5px solid #cc850a;
+  border-radius: 0;
+  padding: 19px 15px 17px 30px;
+  text-transform: uppercase;
+  font-weight:500;
+  &:before {
+    content:"";
+    width:53px;
+    height:78px;
+    position:absolute;
+    left:22px;
+    top:11px;
+    background:url('/images/certified.png') no-repeat;
+  }
+  &:hover,
+  &:focus {
+    background: #cc850a;
+    color: white;
+    border-bottom: 5px solid #af7208;
+    outline:0;
+  }
+}
+
 .button {
   width: 100%;
   position: relative;
@@ -537,6 +567,53 @@ section.white {
     float:left;
     width:100%;
     margin-bottom:30px;
+  }
+}
+
+// GECERTIFICEERDE ORGANISATIES
+
+.certified {
+  margin-top:15px;
+  width:100%;
+  float:left;
+  position:relative;
+}
+
+#table-certified {
+  tr {
+    th {
+      font-family: $font-family-title;
+      text-transform:uppercase;
+      font-size:20px;
+      font-weight:500;
+      background:white;
+      border:0;
+      &:last-child {
+        padding-left:0px;
+      }
+    }
+    td {
+      position:relative;
+      border:0;
+      padding:12px 8px;
+      &:last-child {
+        padding-left:22px;
+        width:170px;
+
+        a {
+          margin-left:7px;
+        }
+        &:before {
+          content:"\f00c";
+          font-family: FontAwesome;
+          position:absolute;
+          left:0;
+          top:10px;
+          font-size:16px;
+          color:#1bc486;
+        }
+      }
+    }
   }
 }
 

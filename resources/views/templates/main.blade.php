@@ -3,23 +3,23 @@
 @section('content')
     @include('partials._title')
 
-        <section class="white textTemp">
-            @if (Content::get('blok1.image') != '')
-                <div class="image">
-                    <img src="{!! Content::image('blok1.image') ?: '/images/placeholder.jpg' !!}" class="img-responsive" alt="{!! Content::get('blok1.title') !!}" />
-                </div>
-            @endif
-            <h1>
-                {!! Content::get('blok1.title') !!}
-            </h1>
-            {!! Content::get('content1') !!}
-        </section>
+    <section class="white textTemp">
+        @if (Content::get('blok1.image') != '')
+            <div class="image">
+                <img src="{!! Content::image('blok1.image') ?: '/images/placeholder.jpg' !!}" class="img-responsive" alt="{!! Content::get('blok1.title') !!}"/>
+            </div>
+        @endif
+        <h1>
+            {!! Content::get('blok1.title') !!}
+        </h1>
+        {!! Content::get('content1') !!}
+    </section>
 
     @if (Content::get('content2') != '')
         <section class="white textTemp">
             @if (Content::get('blok2.image') != '')
                 <div class="image">
-                    <img src="{!! Content::image('blok1.image') ?: '/images/placeholder.jpg' !!}" class="img-responsive" alt="{!! Content::get('blok1.title') !!}" />
+                    <img src="{!! Content::image('blok1.image') ?: '/images/placeholder.jpg' !!}" class="img-responsive" alt="{!! Content::get('blok1.title') !!}"/>
                 </div>
             @endif
 
@@ -35,7 +35,7 @@
         <section class="white textTemp">
             @if (Content::get('blok3.image') != '')
                 <div class="image">
-                    <img src="{!! Content::image('blok1.image') ?: '/images/placeholder.jpg' !!}" class="img-responsive" alt="{!! Content::get('blok1.title') !!}" />
+                    <img src="{!! Content::image('blok1.image') ?: '/images/placeholder.jpg' !!}" class="img-responsive" alt="{!! Content::get('blok1.title') !!}"/>
                 </div>
             @endif
 
@@ -53,6 +53,23 @@
 
     @if (Content::identifier() == 'contact')
         @include('partials._contactform')
+    @endif
+
+    @if (Content::identifier() == 'gecertificeerd')
+        <table>
+            <tr>
+                <th>Organisatie</th>
+                <th>Type Certificaat</th>
+                <th>Status</th>
+            </tr>
+            @foreach (Content::items('gecertificeerd') AS $item)
+                <tr>
+                    <td><a href="{{ $item->get('gecertificeerd.link') }}">{{ $item->get('gecertificeerd.name') }}</a></td>
+                    <td>{{ $item->get('gecertificeerd.type') }}</td>
+                    <td>{{ $item->get('status') }}</td>
+                </tr>
+            @endforeach
+        </table>
     @endif
 
 
